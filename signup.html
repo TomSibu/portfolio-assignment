@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ===== Navbar ===== -->
   <nav>
     <div class="logo">Tom Sibu</div>
     <ul>
@@ -19,44 +18,44 @@
     </ul>
   </nav>
 
-  <!-- ===== Signup Section ===== -->
   <section class="signup">
-    <h2>Create an Account</h2>
+    <h2 style="text-align:center; margin-bottom:25px;">Create an Account</h2>
     <form>
-      <!-- Column 1 -->
       <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Middle Name">
+
       <input type="text" placeholder="Last Name" required>
+      <input type="text" placeholder="Username" required>
+
       <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <input type="password" placeholder="Confirm Password" required>
       <input type="tel" placeholder="Phone Number" required>
+
       <input type="date" placeholder="Date of Birth" required>
       <select required>
-        <option value="">Gender</option>
-        <option>Male</option>
-        <option>Female</option>
-        <option>Other</option>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
       </select>
 
-      <!-- Column 2 -->
-      <input type="text" placeholder="Address Line 1" required>
-      <input type="text" placeholder="Address Line 2">
+      <input type="text" placeholder="Street Address" required>
       <input type="text" placeholder="City" required>
+
       <input type="text" placeholder="State" required>
-      <input type="text" placeholder="Country" required>
-      <input type="number" placeholder="Pin Code" required>
-      <select>
-        <option value="">Highest Education</option>
-        <option>High School</option>
-        <option>Higher Secondary</option>
-        <option>Bachelor's</option>
-        <option>Master's</option>
-        <option>Other</option>
+      <input type="text" placeholder="Pincode" required>
+
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+
+      <select class="full-width" required>
+        <option value="">Select Role</option>
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+        <option value="other">Other</option>
       </select>
-      <input type="text" placeholder="Skills (comma separated)" class="full-width">
-      
-      <!-- Full width submit -->
-      <button type="submit" class="full-width">Register</button>
+
+      <button type="submit" class="full-width">Signup</button>
     </form>
   </section>
 </body>
